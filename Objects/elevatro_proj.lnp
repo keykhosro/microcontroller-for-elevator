@@ -1,0 +1,7 @@
+--cpu ARM7TDMI
+".\objects\startup.o"
+".\objects\elevator.o"
+--strict --scatter ".\Objects\elevatro_proj.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\elevatro_proj.map" -o .\Objects\elevatro_proj.axf
